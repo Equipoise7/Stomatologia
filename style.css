@@ -15,8 +15,8 @@
 }
 
 .container {
-    max-width: 1608px;
-    margin: 0 auto;
+    max-width: 1610px;
+    margin: 0px auto;
     padding: 0px 15px;
     box-sizing: content-box;
 }
@@ -28,29 +28,37 @@
     padding-top: 20px;
 }
 
-.header-number {
-    font-size: 47px;
-    font-weight: bold;
+.header-phone-block {
+    display: flex;
 }
 
-.header-number img {
-    vertical-align: middle;
+.header-phone-block img {
+    margin-right: 20px;
+    max-height: 51px;
+}
+
+.header-number {
+    font-size: 46px;
+    font-weight: bold;
 }
 
 .header-adress {
     text-align: end;
     font-size: 20px;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.6px;
+}
+
+.header-menu {
+    margin-top: 30px;
+    max-width: 1170px;
 }
 
 .menu-list {
     display: flex;
-    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.menu-item:not(:last-child) {
-    margin-right: 68px;
-}
 
 .menu-link {
     color: inherit;
@@ -58,7 +66,7 @@
 }
 
 .menu-link:hover {
-    color: rgb(34, 159, 255);
+    color: #099efe;
 }
 
 .sub-header {
@@ -71,14 +79,20 @@
     font-size: 30px;
 }
 
+@media (max-width: 1000px) {
+    .sub-text {
+        font-size: 26px;
+    }
+}
+
 .sub-text-link {
     margin-top: 20px;
 }
 
 .registration-link {
-    background-color: rgb(34, 159, 255);
+    background-color: #099efe;
     padding: 5px 10px;
-    border-radius: 50px;
+    border-radius: 1em;
     color: #fff;
 }
 /* цвет шрифта #313131 */
