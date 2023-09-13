@@ -1,0 +1,84 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #313131;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.container {
+    max-width: 1608px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-number {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.header-number img {
+    vertical-align: middle;
+}
+
+.header-adress {
+    text-align: end;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+
+.menu-list {
+    display: flex;
+    margin-top: 30px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 68px;
+}
+
+.menu-link {
+    color: inherit;
+    font-size: 30px;
+}
+
+.menu-link:hover {
+    color: rgb(34, 159, 255);
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-text {
+    font-size: 30px;
+}
+
+.sub-text-link {
+    margin-top: 20px;
+}
+
+.registration-link {
+    background-color: rgb(34, 159, 255);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+/* цвет шрифта #313131 */
