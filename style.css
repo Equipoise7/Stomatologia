@@ -14,6 +14,7 @@
     font-size: inherit;
 }
 
+
 .container {
     max-width: 1610px;
     margin: 0px auto;
@@ -37,15 +38,14 @@
     max-height: 51px;
 }
 
-.header-number {
-    font-size: 46px;
+.number {
+    font-size: 32px;
     font-weight: bold;
 }
 
 .header-adress {
     text-align: end;
-    font-size: 20px;
-    letter-spacing: 2.6px;
+    font-size: 17px;
 }
 
 .header-menu {
@@ -95,4 +95,262 @@
     border-radius: 1em;
     color: #fff;
 }
-/* цвет шрифта #313131 */
+
+
+/* -----------------MAIN--------------------- */
+
+
+.important-to-me {
+    background: url('img/iStock-background.png') 0 0/cover no-repeat;
+    height: 600px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.important-title {
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2.6px;
+}
+
+.important-text {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2.6px;
+    margin-top: 90px;
+}
+
+/* -------------CLIENT------------- */
+
+.client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.client-text {
+    font-size: 30px;
+    margin: 80px 0px;
+}
+
+.client-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    max-width: 250px;
+    min-height: 280px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+
+.cleaning {
+    background: url('img/tooth-background.png') 0 0/contain no-repeat;
+    background-position: right;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cleaning-info {
+    margin: 0;
+}
+
+.cleaning-title {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.cleaning-price {
+    font-size: 36px;
+    color: #f00;
+    border: 2px solid #f00;
+    display: inline-block;
+    font-weight: 700;
+    padding: 8px 15px;
+    margin: 22px 0px 36px 0px;
+}
+
+.cleaning-text {
+    color: #f00;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.cleaning-item {
+    font-weight: 700;
+    font-size: 26px;  
+    background-size: 30px;
+}
+
+.cleaning-item::before {
+    background-image: url('img/before.png');
+    background-size: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content:"";
+    margin: 0px 10px -8px 0px;
+}
+
+
+
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-title {
+    font-size: 36px;
+    margin: 60px 0px;
+    text-align: center;
+}
+
+.services-block {
+    display: flex;
+    align-items: center;
+}
+
+.services-text {
+    margin-left: 20px;
+}
+
+.reviews {
+    background-color: #099efe;
+    margin-top: 88px;
+}
+
+
+.reviews-title {
+    text-align: center;
+    padding-top: 58px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.reviews-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-text {
+    color: #fff;
+    font-size: 26px;
+    margin-left: 66px;
+}
+
+.reviews-text-link {
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+
+.reviews-link {
+    color: #fff;
+    font-size: 26px;
+    padding: 0px 10px;
+    border: 2px solid #fff;
+    border-radius: 1em;
+}
+
+.reviews-arrow1 {
+    margin-right: 50px;
+}
+
+.reviews-arrow2 {
+    margin-left: 50px;
+}
+
+.instagram-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-title {
+    font-size: 36px;
+    margin: 50px 0px;
+}
+
+.instagram-image-block {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-image-block img {
+    margin: 0px 25px;
+    max-width: 20%;
+}
+
+.instagram-link-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #099efe;
+    border-radius: 2em;
+    font-weight: 700;
+    margin: 50px 0px;
+    padding: 5px 10px;
+}
+
+.instagram-link-block a {
+    color: #fff;
+    padding-right: 18px;
+}
+
+/* --------------FOOTER-------------- */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer-block {
+    display: flex;
+}
+
+.footer-nav {
+    margin-left: 85px;
+}
+
+.footer-nav li {
+    line-height: 25px;
+}
+
+.footer-nav a {
+    font-weight: 700;
+}
+
+.footer-nav a:hover {
+    color: #099efe;
+}
+
+.footer-phone-block {
+    display: flex;
+}
+
+.footer-phone-block img {
+    margin-right: 20px;
+}
+
+.footer-adress {
+    font-size: 26px;
+}
