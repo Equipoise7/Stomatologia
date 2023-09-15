@@ -6,11 +6,10 @@
     text-decoration: none;
     list-style: none;
     color: #313131;
-    font-size: 18px;
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 700;
     font-size: inherit;
 }
 
@@ -18,9 +17,10 @@
 .container {
     max-width: 1610px;
     margin: 0px auto;
-    padding: 0px 15px;
-    box-sizing: content-box;
+    width: 100%;
 }
+
+
 
 .header-logo {
     display: flex;
@@ -39,13 +39,13 @@
 }
 
 .number {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 47px;
+    font-weight: 700;
 }
 
 .header-adress {
     text-align: end;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 .header-menu {
@@ -62,7 +62,7 @@
 
 .menu-link {
     color: inherit;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .menu-link:hover {
@@ -76,22 +76,21 @@
 }
 
 .sub-text {
-    font-size: 30px;
-}
-
-@media (max-width: 1000px) {
-    .sub-text {
-        font-size: 26px;
-    }
+    font-size: 33px;
 }
 
 .sub-text-link {
     margin-top: 20px;
+    display: inline-block;
+}
+
+.sub-text-link a {
+    font-size: 31px;
 }
 
 .registration-link {
     background-color: #099efe;
-    padding: 5px 10px;
+    padding: 4px 20px 9px 20px;
     border-radius: 1em;
     color: #fff;
 }
@@ -111,15 +110,13 @@
 }
 
 .important-title {
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 2.6px;
+    font-weight: 700;
+    font-size: 45px;
 }
 
 .important-text {
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
-    letter-spacing: 2.6px;
     margin-top: 90px;
 }
 
@@ -132,10 +129,18 @@
     text-align: center;
 }
 
-.client-text {
-    font-size: 30px;
+.client-title {
+    font-size: 45px;
+    font-weight: 700;
     margin: 80px 0px;
 }
+
+.client-text {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
 
 .client-wrapper {
     display: flex;
@@ -145,15 +150,15 @@
 .client-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    max-width: 250px;
-    min-height: 280px;
-    letter-spacing: 1px;
     margin-bottom: 100px;
+    max-width: 250px;
 }
 
+.client-block img {
+    height: 197px;
+}
 
 .cleaning {
     background: url('img/tooth-background.png') 0 0/contain no-repeat;
@@ -162,24 +167,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-}
-
-.cleaning-info {
-    margin: 0;
 }
 
 .cleaning-title {
-    font-size: 36px;
-    letter-spacing: 2px;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .cleaning-price {
-    font-size: 36px;
+    font-size: 64px;
+    font-weight: 700;
     color: #f00;
     border: 2px solid #f00;
     display: inline-block;
-    font-weight: 700;
     padding: 8px 15px;
     margin: 22px 0px 36px 0px;
 }
@@ -187,23 +187,22 @@
 .cleaning-text {
     color: #f00;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 38px;
 }
 
 .cleaning-item {
     font-weight: 700;
-    font-size: 26px;  
-    background-size: 30px;
+    font-size: 38px;  
 }
 
 .cleaning-item::before {
     background-image: url('img/before.png');
-    background-size: 30px;
+    background-size: 42px;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
     content:"";
-    margin: 0px 10px -8px 0px;
+    margin: 0px 10px -10px 0px;
 }
 
 
@@ -211,11 +210,12 @@
 
 .services-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .services-title {
-    font-size: 36px;
+    font-size: 45px;
+    font-weight: 700;
     margin: 60px 0px;
     text-align: center;
 }
@@ -226,55 +226,49 @@
 }
 
 .services-text {
-    margin-left: 20px;
+    margin-left: 45px;
+    font-size: 30px;
 }
 
 .reviews {
     background-color: #099efe;
     margin-top: 88px;
+    padding: 60px 0px 80px 0px;
 }
 
+.reviews-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .reviews-title {
     text-align: center;
-    padding-top: 58px;
     color: #fff;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 45px;
 }
 
 .reviews-block {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .reviews-text {
     color: #fff;
-    font-size: 26px;
-    margin-left: 66px;
+    font-size: 40px;
 }
 
 .reviews-text-link {
-    text-align: center;
-    position: relative;
-    bottom: 80px;
+    margin-top: 40px;
 }
 
 .reviews-link {
     color: #fff;
-    font-size: 26px;
-    padding: 0px 10px;
-    border: 2px solid #fff;
+    font-size: 31px;
+    padding: 2px 15px;
+    border: 3px solid #fff;
     border-radius: 1em;
-}
-
-.reviews-arrow1 {
-    margin-right: 50px;
-}
-
-.reviews-arrow2 {
-    margin-left: 50px;
 }
 
 .instagram-block {
@@ -284,7 +278,7 @@
 }
 
 .instagram-title {
-    font-size: 36px;
+    font-size: 45px;
     margin: 50px 0px;
 }
 
@@ -304,14 +298,21 @@
     align-items: center;
     background-color: #099efe;
     border-radius: 2em;
-    font-weight: 700;
     margin: 50px 0px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 15px;
 }
 
 .instagram-link-block a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #fff;
-    padding-right: 18px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.instagram-link-block img {
+    margin-left: 18px;
 }
 
 /* --------------FOOTER-------------- */
@@ -325,6 +326,7 @@
 
 .footer-block {
     display: flex;
+    align-items: center;
 }
 
 .footer-nav {
@@ -336,7 +338,8 @@
 }
 
 .footer-nav a {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .footer-nav a:hover {
@@ -352,5 +355,5 @@
 }
 
 .footer-adress {
-    font-size: 26px;
+    font-size: 36px;
 }
